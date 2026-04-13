@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Rush</title>
+    <link rel="stylesheet" href = "{{ url_for('static', filename = 'roadrushstyle.css') }}">
+    <link rel = "icon" href = "{{ url_for('static', filename = 'roadrushfavicon.png') }}">
+</head>
+<body>
+    <div class="score hide"></div>
+    <div class="highestScore hide">Highest Score: 0</div>
+    <form action = '/submitMainMenu' method = 'POST'>
+        <button type = 'submit' class="main-menu">Main Menu</button>
+    </form>
+
+
+    <div class="start_screen">
+        <p>Click here to start the game<br>
+            Use arrow keys to move<br>
+            Avoid other cars<br>
+        </p>
+    </div>
+
+    <div class="game_area ">
+        
+    </div>
+
+    <script src = "{{ url_for('static', filename='roadRushscript.js') }}" ></script>
+</body>
+</html>

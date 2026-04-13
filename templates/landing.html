@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Hub</title>
+    <link rel = 'stylesheet' href = "{{ url_for('static', filename = 'landingstyle.css') }}">
+    <link rel = "icon" href = "{{ url_for('static', filename = 'arcadefavicon.png') }}">
+</head>
+<body>
+        <h1 class="hub-title"><span >ARCADE</span><span></span><span >HUB</span></h1>
+        <div class="container">
+
+        
+            <div class="road-rush">
+                    <div class="road-rush-content">
+                        <div class="rr-image"></div>
+                        <p class="road-rush-name">ROAD RUSH</p>
+                        <p class="road-rush-info">Fast-Paced 2D Arcade Game</p>
+                        <form action = '/submitRoadRush' method = 'POST'>
+                            <button type = 'submit' class = 'play-btn' >PLAY NOW</button>
+                        </form>
+                    </div>
+
+            </div>
+            <div class="tic-tac">
+                <div class="tic-tac-content">
+                        <div class="tt-image"></div>
+                        <p class="tic-tac-name">TIC TAC TOE</p>
+                        <p class="tic-tac-info">Classic Strategy Against Your Friend</p>
+                        <form action = '/submitTicTacToe' method = 'POST'>
+                            <button type = 'submit' class = 'play-btn' >PLAY NOW</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    
+
+
+    <footer>
+        <hr>
+        <div class="footer-div">
+            <p class="footer-info">© 2025 Built By S.M.Haider Zaidi</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#192A32;
+}
+.heading-part1, .heading-part3{
+    color:#44C2BE;
+}
+.heading-part2{
+    color:#F0B94E;
+    font-weight:900;
+}
+.container{
+    height:100vmin;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:column;
+    gap:4vmin;
+}
+.heading{
+    font-size:6vmin;
+    font-weight:900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap:1vmin;
+    padding-top:4vmin;
+    padding-bottom:4vmin;
+}
+.game-row{
+    display:flex;
+    gap:5vmin;
+    flex-direction:row;
+    align-items:center;
+
+}
+.x-score,
+.o-score{
+    color:white;
+    width:250px;
+    height:90px;
+    font-size:22px;
+    border-radius:8px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.x-score{
+    background-color:#44C2BE;
+}
+
+.o-score{
+    background-color:#F0B94E;
+}
+
+
+.game{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    height:60vmin;
+    width:60vmin;
+    gap:1.5vmin;
+}
+.boxes{
+    width:18vmin;
+    height:18vmin;
+    background-color:#1F3540;
+    font-size:5vmin;
+    font-weight:bold;
+    border-radius:8%;
+    border:none;
+    border-bottom:4px solid black;
+    
+}
+.boxes:hover{
+    cursor:pointer;
+    transform:translateY(-0.5vmin);
+}
+.restart, .main-menu{
+    background-color:#99b9c2;
+    color:white;
+    font-size:2.5vmin;
+    width:17vmin;
+    height:6vmin;
+    border-radius:2vmin;
+    border:none;
+}
+.restart:hover, .main-menu:hover{
+    cursor:pointer;
+    transform:translateY(-0.4vmin);
+    border:none;
+    border-bottom:1px solid #1F3540;
+}
+.hide{
+    display:none;
+}
+.winInfo{
+    width:60vmin;
+    height:40vmin;
+    border-radius:3vmin;
+    background: linear-gradient(135deg,#F0B94E, #44C2BE);
+}
+.winner{
+    box-shadow: 0 0 15px gold;
+    transform: scale(1.05);
+}
+.turn-info{
+    background-color:#192A32;
+
+}
+
+.restart-tie-mainMenu{
+    display:flex;
+    flex-direction:row;
+    gap:5vmin;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:4vmin;
+}
+
+.ties{
+    background-color:#99b9c2;
+    color:white;
+    font-size:2.5vmin;
+    width:17vmin;
+    height:6vmin;
+    border-radius:2vmin;
+    border:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.tie-count{
+    color:white;
+    font-size:2.5vmin;
+}

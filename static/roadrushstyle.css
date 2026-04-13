@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow:hidden;
+    height:100vh;
+    background-image:url('BG_IMAGE.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.car{
+    width:55px;
+    height:90px;
+    background-image:url('Our_car.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:absolute;
+    top:120px;
+    left:50px;
+}
+.enemy{
+    width:55px;
+    height:90px;
+    background-image:url('enemycar.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    position:absolute;
+}
+.game_area{
+    width:400px;
+    height:100vh;
+    background-color:#2d3436;
+    margin:auto;
+    position:relative;
+    top:0;
+    border-right:7px dashed #b2bec3;
+    border-left:7px dashed #b2bec3;
+}
+.score, .highestScore, .main-menu{
+    position:absolute;
+    width:250px;
+    height:100px;
+    top:15px;
+    left:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    background-color:#10ac84;
+    box-shadow: 0PX 5PX 5PX #777;
+    font-size:1em;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    
+}
+.highestScore{
+    top:130px;
+}
+.main-menu{
+    top:245px;
+    border:none;
+    cursor:pointer;
+}
+.start_screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #E0115F;
+    height: 200px;
+    width: 420px;
+    font-size: 1.15em;
+    font-family: 'Segoe UI', 'Arial Black', Gadget, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1.5px solid rgba(255,255,255,0.18);
+    padding: 24px 32px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+    cursor: pointer;
+}
+.lines{
+    width:10px;
+    height:100px;
+    background-color:white;
+    position:absolute;
+    left:195px;
+}
+.hide{
+    display:none;
+}

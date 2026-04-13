@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel = 'stylesheet' href = "{{ url_for('static', filename = 'ttstyle.css') }}">
+    <link rel = "icon" href = "{{ url_for('static', filename = 'tictacfavicon.png') }}">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="heading">
+            <span class="heading-part1">Tic</span>
+            <span class="heading-part2">-Tac-</span>
+            <span class="heading-part3">Toe</span>
+        </div>
+
+        <div class="turn-info"></div>
+    
+        <div class="game-row ">
+
+            <div class="o-score">
+                <p class="playerO">Player O total wins:</p><br>
+                <p class="scoreO">0</p>
+            </div>
+
+            <div class="game">
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+                <button class="boxes"></button>
+            </div>
+
+            <div class="x-score">
+                <p class="playerX">Player X total wins:</p><br>
+                <p class="scoreX">0</p>
+            </div>
+
+        </div>
+
+        <div class="restart-tie-mainMenu">
+            <button class="restart">Restart</button>
+                <span class="ties">Ties: <span class="tie-count">0</span></span>
+            <form action = '/submitMainMenu' method = 'POST'>
+                <button type = 'submit' class="main-menu">Main Menu</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='ticTacscript.js') }}"></script>
+
+</body>
+</html>
